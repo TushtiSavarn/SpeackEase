@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz SYSTEM "xmlquiz.dtd">
+  <quiz>
+     <language lid="Hindi">
+       <answer1>Dhanyavaad</answer1>
+       <answer2>Namaste</answer2>
+     </language>
+    <language lid="Japanese">
+       <answer1>Arigatou</answer1>
+       <answer2>Sayounara</answer2>
+     </language>
+    <language lid="Korean">
+       <answer1>Gamsahamnida</answer1>
+       <answer2>Annyeonghi gaseyo</answer2>
+     </language>
+    <language lid="German">
+       <answer1>Danke</answer1>
+       <answer2>Auf Wiedersehen</answer2>
+     </language>
+    <language lid="French">
+       <answer1>Bonjour</answer1>
+       <answer2>Au revoir</answer2>
+       <answer3>Thank you</answer3>
+    </language>
+    <language lid="English">
+       <answer1>Hello</answer1>
+       <answer2>Please</answer2>
+       <answer3>Thank you</answer3>
+
+     </language>
+ </quiz>

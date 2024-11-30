@@ -1,0 +1,7 @@
+<!DOCTYPE quiz [
+<!ELEMENT quiz(language)*>
+<!ELEMENT language(answer1,answer2,answer3)>
+<!ELEMENT answer1(#PCDATA)>
+<!ELEMENT answer2(#PCDATA)>
+<!ATTLIST language lid(Hindi/Japanese/Korean/German/French/English)>
+                ]>

@@ -1,0 +1,259 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 80px; /* Compensate for the fixed header */
+}
+
+/* Styling for the fixed header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ab65f8; /* Header background color */
+    color: #fff; /* Text color */
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    z-index: 1000; /* Keep the header on top */
+}
+
+/* Logo styling */
+.fixed-header .logo {
+    height: 50px; /* Adjust logo size */
+    margin-right: 15px; /* Add space between logo and text */
+}
+
+/* Site name styling */
+.fixed-header .site-name {
+    font-size: 1.8rem; /* Font size for the site name */
+    font-weight: bold; /* Bold text for emphasis */
+    color: white;
+}
+
+/* Tagline styling */
+.tagline {
+    color: #333; /* Use a contrasting color */
+    font-size: 2.2rem; /* Larger font size for attention */
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center-align the text */
+    margin-top: 100px; /* Space below the header */
+    padding: 20px; /* Padding around the text */
+}
+
+/* Button Section Styling */
+.button-section {
+    text-align: center; /* Center the buttons */
+    margin-top: 50px; /* Add some space above the buttons */
+}
+
+.btn {
+    color: white; /* Button text color */
+    padding: 20px 50px; /* Larger padding for a bigger button */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from text */
+    font-size: 1.5rem; /* Increase text size */
+    display: inline-block; /* Display as block within inline context */
+    width: 40%; /* Set width to 40% of the container */
+    margin: 20px; /* Add space between buttons */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    background: linear-gradient(45deg, #27296d, #ab65f8);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect for Buttons */
+.btn:hover {
+    background-color: #494949; /* Change background on hover */
+    border-radius: 50px; /* Increase corner radius */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+}
+
+/* Flag Section Styling */
+.container {
+    width: 100%; /* Full width of the container */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Relative positioning for container */
+}
+
+/* Flexbox Wrapper for Flags */
+.wrapper {
+    display: flex;
+    margin-top: 100px;
+    width: calc(300px * 6); /* Width to fit all flags */
+    animation: slide 12s infinite linear; /* Apply sliding animation */
+}
+
+/* Keyframe animation for sliding effect */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Initial position */
+    }
+    100% {
+        transform: translateX(-100%); /* Move all flags and loop */
+    }
+}
+
+/* Flag Image Styling */
+.wrapper img {
+    width: 300px; /* Set width for each flag */
+    height: auto;
+    margin: 0; /* Remove space between flags */
+}
+/* Language Section Styling */
+.language {
+    text-align: center; /* Center-align text inside the container */
+    margin-top: 100px; /* Space above the container */
+    background-color: #27296d;
+    padding: 20px; /* Add padding for spacing */
+    font-weight: bold; /* Bold text for emphasis */
+    color: white;
+}
+
+.language > .option {
+    color: white; /* Text color */
+    font-size: 2.2rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    display: inline-block; /* Ensure the text behaves as an inline block element */
+    padding: 50px; /* Padding around the text */
+}
+/* Banner Container for Asia */
+.banner-container .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add spacing between banners */
+    margin-bottom: 20px;
+}
+
+/* Centered Row for the third banner */
+.banner-container .center-row {
+    display: flex;
+    justify-content: center; /* Center the single banner */
+    margin-bottom: 20px;
+}
+
+/* Banner Container */
+.banner-container {
+    display: flex;
+    flex-direction: column; /* Stack categories vertically */
+    align-items: center; /* Center-align categories */
+    margin-top: 80px;
+}
+
+/* Category Styling */
+.category {
+    margin-bottom: 30px; /* Space between categories */
+}
+
+/* Category Title Styling */
+.categ {
+    background-color: #ab65f8;
+    color: white; /* Text color */
+    font-size: 2rem; /* Font size for category title */
+    font-weight: bold; /* Bold text */
+    display: inline-block; /* Ensure the text behaves as an inline block element */
+    padding: 20px; /* Padding around the text */
+    border-radius: 50px; /* Increase corner radius */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+    margin-bottom: 15px; /* Space below category title */
+    height: 100px;
+    width:350px
+}
+
+/* Banner Styling */
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #ab65f8; /* Border color to match header */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 50px;
+    text-decoration: none;
+    color: #333;
+    width: 250px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.banner img {
+    width: 40px; /* Size of the flag */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.banner span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.banner:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.about {
+    background-color: #ab65f8;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin-top: 80px;
+ 
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-title {
+    font-size: 1.8rem; /* Font size for the team title */
+    font-weight: bold;
+    height: 250px;;
+    width: 600px;
+    border-radius: 2px;
+    background-color: #27296d;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ol {
+    margin: 20px 0;
+}
+
+.additional-content {
+    margin-top: 20px;
+}
+
+.additional-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.additional-content p {
+    font-size: 1rem;
+}
+
+.additional-content a {
+    color: #fff;
+    text-decoration: underline;
+    
+}
+
+.additional-content a:hover {
+    text-decoration: none;
+}

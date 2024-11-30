@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8"> <!-- Ensures Hindi characters are supported -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For better responsiveness -->
+    <title>अंग्रेज़ी सीखें</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        /* Styling for the fixed header */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ab65f8;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .fixed-header .logo {
+            height: 50px;
+            margin-right: 15px;
+        }
+        .fixed-header .site-name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+        .header2 {
+            width: 90%;
+            max-width: 900px;
+            background-color: #f5c7f7;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            align-items: center;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding-top: 80px;
+        }
+        .box {
+            width: 90%;
+            max-width: 900px;
+            background-color: #5e63b6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 40px;
+            box-sizing: border-box;
+            align-items: center;
+        }
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .circle-item {
+            text-align: center;
+            cursor: pointer;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #00008B;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: box-shadow 0.3s ease;
+        }
+        .circle:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.8);
+        }
+        .content {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            width: 90%;
+            max-width: 900px;
+            min-height: 300px;
+            background-color: #f8f8ff;
+            border-radius: 10px;
+            padding: 30px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            font-family: Arial, sans-serif;
+        }
+        .content h2 {
+            color: #00008B;
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-family: 'Dancing Script', cursive;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .content ul {
+            list-style-type: square;
+            padding-left: 20px;
+            text-align: left;
+        }
+        .content ul li {
+            margin: 10px 0;
+        }
+        .highlight {
+            color: #ff6347;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-header">
+        <img src="SpeakEase.png" alt="Logo" class="logo">
+        <span class="site-name">SpeakEase</span>
+    </div>
+
+    <center>
+        <div class="header2">
+            <h1>अंग्रेज़ी सीखें <img src="uk.jpg" width="20px" height="20px" style="border-radius: 50%; object-fit: cover;"></h1>
+        </div>
+    </center>
+
+    <center>
+        <div class="box">
+            <div class="circle-container">
+                <div class="circle-item" id="phrases-btn">
+                    <div class="circle">वाक्य</div>
+                    <div class="circle-text">वाक्य</div>
+                </div>
+                <div class="circle-item" id="video-btn">
+                    <div class="circle">वीडियो</div>
+                    <div class="circle-text">वीडियो</div>
+                </div>
+                <div class="circle-item" id="quiz-btn">
+                    <div class="circle">प्रश्नोत्तरी</div>
+                    <div class="circle-text">प्रश्नोत्तरी</div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <center>
+        <div class="content" id="content">
+            <p>स्वागत है! किसी अनुभाग का चयन करें।</p>
+        </div>
+    </center>
+
+    <script>
+        // JavaScript to change content dynamically
+        document.getElementById('phrases-btn').onclick = function() {
+            document.getElementById('content').innerHTML = `
+                <h2>वाक्य</h2>
+                <p>आम अंग्रेजी वाक्य और उनके अनुवाद:</p>
+                <ul>
+                    <li><span class="highlight">Hello</span> - नमस्ते</li>
+                    <li><span class="highlight">Thank you</span> - धन्यवाद</li>
+                    <li><span class="highlight">Goodbye</span> - अलविदा</li>
+                    <li><span class="highlight">Please</span> - कृपया</li>
+                    <li><span class="highlight">Excuse me</span> - माफ कीजिये</li>
+                </ul>
+            `;
+        };
+
+        document.getElementById('video-btn').onclick = function() {
+            document.getElementById('content').innerHTML = `
+                <h2>वीडियो</h2>
+                <p>अपनी भाषा कौशल सुधारने के लिए वीडियो देखें:</p>
+                <iframe src="https://www.youtube.com/embed/QoKpQMJnBHY" frameborder="0" allowfullscreen></iframe>
+            `;
+        };
+
+        document.getElementById('quiz-btn').onclick = function() {
+            document.getElementById('content').innerHTML = `
+                <h2>प्रश्नोत्तरी</h2>
+                <p>हमारी प्रश्नोत्तरी के साथ अपनी अंग्रेजी ज्ञान जांचें!</p>
+                <ul>
+                    <li>नमस्ते का अंग्रेजी शब्द क्या है?</li>
+                    <li>किसी से पूछने के लिए अंग्रेजी में क्या कहेंगे?</li>
+                    <li>"धन्यवाद" का अंग्रेजी अनुवाद क्या है?</li>
+                </ul>
+            `;
+        };
+    </script>
+</body>
+</html>
